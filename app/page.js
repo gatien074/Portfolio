@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-     <header className="bg-cover bg-center text-center py-8 px-4 bg-cover bg-center bg-fixed" style={{backgroundImage: `url(/images/a4f6f0781e483fbe9669c35f26eff1fa.gif)`, }}>
+     <header className="bg-cover bg-center text-center py-20 px-4 bg-cover bg-center bg-fixed" style={{backgroundImage: `url(/images/a4f6f0781e483fbe9669c35f26eff1fa.gif)`, }}>
   <div className="flex justify-center gap-4 md:gap-8 py-6">
    <Link href="#compétences"> <button 
       className="w-28 md:w-32 h-10 bg-white rounded-full hover:bg-transparent hover:text-white shadow shadow-blue-600 hover:border shadow-2xl shadow-inner transition-all duration-300"
@@ -27,22 +27,28 @@ export default function Home() {
   <h1 className="text-white text-4xl md:text-5xl lg:text-6xl py-4">Portfolio</h1>
 
   <div className="mt-8 font-extrabold">
-    <span className="text-3xl md:text-4xl text-red-400 lg:text-5xl drop-shadow-2xl font-bold bg-clip-text bg-gradient-to-r from-white to-blue-800">NGOUESSY Gatien</span>
+    <span className="text-3xl md:text-4xl text-red-800 lg:text-5xl drop-shadow-2xl font-bold bg-clip-text bg-gradient-to-r from-white via-pink-500 text-transparent to-blue-800">NGOUESSY Gatien</span>
     <h2 className="text-blue-700 text-lg md:text-xl lg:text-2xl py-2">Développeur web et mobile</h2>
     <p className="text-white" >Passionné du Numérique</p>
   </div>
 
   <nav className="flex justify-center h-16 mt-16 items-center">
     <div className="flex gap-8 md:gap-12">
-      <Link href="">
-        <Image className="fill-blue-700 scale-150" src="/images/facebook-circle-fill.svg" alt="Facebook" width={30} height={30} />
+      <div className=" rounded-2xl origin-center bg-white h-10 w-10 flex justify-center items-center">
+      <Link href=""> 
+        <Image className="fill-blue-700  rotate-0  drop-shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 " src="/images/facebook-circle-fill.svg" alt="Facebook" width={29} height={29} />
       </Link>
+      </div>
+      <div  className=" rounded-2xl bg-white h-10 w-10 origin-center flex justify-center items-center ">
       <Link href="">
-        <Image className="fill-blue-700 translate " src="/images/instagram-fill.svg" alt="Instagram" width={30} height={30} />
+        <Image className="fill-blue-700 translate rotate-0 drop-shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 " src="/images/instagram-fill.svg" alt="Instagram" width={30} height={30} />
       </Link>
+      </div>
+      <div  className=" rounded-2xl bg-white h-10 w-10 flex justify-center items-center origin-center ">
       <Link href="">
-        <Image className="fill-blue-700 scale-150" src="/images/linkedin-fill.svg" alt="LinkedIn" width={30} height={30} />
+        <Image className="fill-blue-700  rotate-0 drop-shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700" src="/images/linkedin-fill.svg" alt="LinkedIn" width={30} height={30} />
       </Link>
+      </div>
     </div>
   </nav>
 </header>
@@ -84,23 +90,25 @@ export default function Home() {
       </div>
 
       </section>
-      <section >
-        <div className="m-auto flex justify-center">
-       <h1 className="text-2xl">Me contacter</h1>
+      <section className="px4 py-10" >
+        <div className="flex justify-center">
+       <h1 className="text-3xl text-center">Me contacter</h1>
        </div>
-      <form className="m-auto md:flex md:justify-center py-10 gap-10 ml-24">
-        <label>
-          <input className="h-16 px-4" type="text" id="" placeholder="Entrer votre Nom"></input>
-        </label>
-        <label>
-          <input  className="h-16 px-4" type="text" id="" placeholder="Entrer votre Prenom"></input>
-        </label>
-        <label>
-          <input  className="h-16 px-4" type="email" id="" placeholder="Entrer votre email"></input>
-        </label>
+      <form className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-6 mt-10">
         
+        <label className="flex flex-col w-full sm:w-[300px]">
+          <input className="h-16 ring-2 ring-blue-500 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="" placeholder="Entrer votre Nom"></input>
+        </label>
+        <label className="flex flex-col w-full sm:w-[300px]">
+          <input  className="h-16 px-4 ring-2 ring-blue-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="" placeholder="Entrer votre Prenom"></input>
+        </label>
+        <label className="flex flex-col w-full sm:w-[300px]">
+          <input  className="h-16 px-4 border ring-2 ring-blue-500 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="" placeholder="Entrer votre email"></input>
+        </label>
+        <div className="flex lg:flex-col items-center lg:items-start">
+        <button className=" w-full sm:w-[200px] bg-blue-500 sm:h-16 h-12  text-white sm:text-2xl text-lg rounded-xl" type="submit">Envoyer</button>
+        </div>
       </form>
-
       </section>
 
       <footer className='mt-48'>
