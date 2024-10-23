@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-     <header className="bg-cover bg-center text-center py-8 px-4 bg-cover bg-center bg-fixed" style={{backgroundImage: `url(/images/a4f6f0781e483fbe9669c35f26eff1fa.gif)`}}>
+     <header className="bg-cover bg-center text-center py-8 px-4 bg-cover bg-center bg-fixed" style={{backgroundImage: `url(/images/a4f6f0781e483fbe9669c35f26eff1fa.gif)`, }}>
   <div className="flex justify-center gap-4 md:gap-8 py-6">
    <Link href="#compétences"> <button 
       className="w-28 md:w-32 h-10 bg-white rounded-full hover:bg-transparent hover:text-white shadow shadow-blue-600 hover:border shadow-2xl shadow-inner transition-all duration-300"
@@ -27,21 +27,21 @@ export default function Home() {
   <h1 className="text-white text-4xl md:text-5xl lg:text-6xl py-4">Portfolio</h1>
 
   <div className="mt-8 font-extrabold">
-    <span className="text-3xl md:text-4xl lg:text-5xl dark:bg-black drop-shadow-2xl font-bold bg-clip-text bg-gradient-to-r from-red-600 to-blue-800">NGOUESSY Gatien</span>
-    <h2 className="text-gray-700 text-lg md:text-xl lg:text-2xl py-2">Développeur web et mobile</h2>
-    <p>Passionné du Numérique</p>
+    <span className="text-3xl md:text-4xl text-red-400 lg:text-5xl drop-shadow-2xl font-bold bg-clip-text bg-gradient-to-r from-white to-blue-800">NGOUESSY Gatien</span>
+    <h2 className="text-blue-700 text-lg md:text-xl lg:text-2xl py-2">Développeur web et mobile</h2>
+    <p className="text-white" >Passionné du Numérique</p>
   </div>
 
   <nav className="flex justify-center h-16 mt-16 items-center">
     <div className="flex gap-8 md:gap-12">
       <Link href="">
-        <Image className="fill-blue-700" src="/images/facebook-circle-fill.svg" alt="Facebook" width={30} height={30} />
+        <Image className="fill-blue-700 scale-150" src="/images/facebook-circle-fill.svg" alt="Facebook" width={30} height={30} />
       </Link>
       <Link href="">
-        <Image className="fill-blue-700" src="/images/instagram-fill.svg" alt="Instagram" width={30} height={30} />
+        <Image className="fill-blue-700 translate " src="/images/instagram-fill.svg" alt="Instagram" width={30} height={30} />
       </Link>
       <Link href="">
-        <Image className="fill-blue-700" src="/images/linkedin-fill.svg" alt="LinkedIn" width={30} height={30} />
+        <Image className="fill-blue-700 scale-150" src="/images/linkedin-fill.svg" alt="LinkedIn" width={30} height={30} />
       </Link>
     </div>
   </nav>
@@ -84,6 +84,25 @@ export default function Home() {
       </div>
 
       </section>
+      <section >
+        <div className="m-auto flex justify-center">
+       <h1 className="text-2xl">Me contacter</h1>
+       </div>
+      <form className="m-auto md:flex md:justify-center py-10 gap-10 ml-24">
+        <label>
+          <input className="h-16 px-4" type="text" id="" placeholder="Entrer votre Nom"></input>
+        </label>
+        <label>
+          <input  className="h-16 px-4" type="text" id="" placeholder="Entrer votre Prenom"></input>
+        </label>
+        <label>
+          <input  className="h-16 px-4" type="email" id="" placeholder="Entrer votre email"></input>
+        </label>
+        
+      </form>
+
+      </section>
+
       <footer className='mt-48'>
         <div className='flex justify-center '>
           <h4 className='text-white '> contacter</h4>
