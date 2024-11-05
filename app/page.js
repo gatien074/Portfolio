@@ -9,15 +9,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-     <header className="bg-cover bg-center text-center py-20 px-4 bg-cover bg-center bg-fixed" style={{backgroundImage: `url(/images/a4f6f0781e483fbe9669c35f26eff1fa.gif)`, }}>
+     <header className="bg-center text-center py-20 px-4 bg-cover  bg-fixed" style={{backgroundImage: `url(/images/a4f6f0781e483fbe9669c35f26eff1fa.gif)`, }}>
   <div className="flex justify-center gap-4 md:gap-8 py-6">
    <Link href="#compétences"> <button 
-      className="w-28 md:w-32 h-10 bg-white rounded-full hover:bg-transparent hover:text-white shadow shadow-blue-600 hover:border shadow-2xl shadow-inner transition-all duration-300"
+      className="w-28 md:w-32 h-10 bg-white rounded-full hover:bg-transparent hover:text-white  shadow-blue-600 hover:border shadow-2xl transition-all duration-300"
       type="button" >
       Compétences
     </button></Link>
     <button
-      className="w-28 md:w-32 h-10 bg-white rounded-full hover:bg-transparent hover:text-white shadow shadow-purple-600 hover:border shadow-2xl shadow-inner transition-all duration-300"
+      className="w-28 md:w-32 h-10 bg-white rounded-full hover:bg-transparent hover:text-white shadow-purple-600 hover:border shadow-2xl transition-all duration-300"
       type="button"
     >
       Projets
