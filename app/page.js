@@ -65,15 +65,11 @@ export default function Home() {
     <Image className="w-16 h-10 sm:w-[50px] sm:h-12 lg:w-[50px] lg:h-[50px] shadow-md shadow-white rounded-full" src="/images/javascript-1.svg" alt="JavaScript" width={1200} height={100} />
   </motion.div>
 </section>
-
-
-
       <footer className='mt-48'>
         <div className='flex justify-center '>
           <h4 className='text-white '> contacter</h4>
         </div>
 
-        
       </footer>
     </div>
   );
