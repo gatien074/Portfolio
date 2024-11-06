@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 
-body {
-  background-color: #000000;
-
-}
-
-header{
-  background-image: url(../public/images/WhatsApp\ Image\ 2024-10-31\ à\ 17.49.21_97692324.jpg);
+body{
+  background-image: url(../public/images/a4f6f0781e483fbe9669c35f26eff1fa.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
